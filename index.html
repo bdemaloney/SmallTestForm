@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>SmallTestForm</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html ng-app>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular-resource.min.js">
+  </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-resource.min.js">
+  </script>
+  <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+</head>
+
+<body>
+  <div ng-app="myApp" ng-controller="formCtrl">
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>Small Test Form</h1>
+        <div class="row">
+          <div class="col-xs-4">
+            <h2>Personal Info</h2>
+            <label>Name:</label>
+            <input type="name" id="name" ng-model="name" placeholder="First, Last" required><br>
+            <label>Email:</label>
+            <input type="email" ng-model="email" placeholder="Email" required><br>
+            <label>Telephone:</label>
+            <input type="telephone" ng-model="telephone" placeholder="Telephone" required><br>
+          </div>
+
+
+          <div class="col-md-5">
+            <h2>Address</h2>
+
+            <input class="col-md-12" type="street" ng-model="street" placeholder="Street Address" required><br>
+
+            <input class="col-md-6" type="city" ng-model="city" placeholder="City" required>
+
+
+            <select class="col-md-2" type="state" ng-model="state" placeholder="State">
+            <option value="">- -</option>
+            <option value="AK">AK</option>
+            <option value="AL">AL</option>
+            <option value="AR">AR</option>
+            <option value="AZ">AZ</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DC">DC</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="IA">IA</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="MA">MA</option>
+            <option value="MD">MD</option>
+            <option value="ME">ME</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MO">MO</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="NE">NE</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NV">NV</option>
+            <option value="NY">NY</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="PR">PR</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VA">VA</option>
+            <option value="VT">VT</option>
+            <option value="WA">WA</option>
+            <option value="WI">WI</option>
+            <option value="WV">WV</option>
+            <option value="WY">WY</option>
+            </select>
+
+
+            <input class="col-md-4" type="zip" ng-model="zip" placeholder="Zip" required>
+            <button onclick="email()">Submit Info</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</body>
+
+</html>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

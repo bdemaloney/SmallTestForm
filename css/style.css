@@ -1,0 +1,12 @@
+  .jumbotron label {
+    width: 25%;
+    height: 15px;
+  }
+  
+  input {
+    height: 26px;
+  }
+  
+  select {
+    height: 26px;
+  }
